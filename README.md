@@ -49,19 +49,21 @@ pip install mcp opcua asyncua openai prompt_toolkit requests numpy
 
 编辑 MCPClient.py 中的 API 配置（默认使用 DeepSeek，也可取消注释切换至本地 Ollama）：
 
-code
-Python
+
 API_KEY = "你的_DEEPSEEK_API_KEY"
+
 BASE_URL = "https://api.deepseek.com"
+
 #或者使用本地 Ollama
+
 #BASE_URL = "http://localhost:11434/v1"
+
 #API_KEY = "ollama"
 
 如果你的 Consul 地址不同，请在终端设置环境变量，或直接修改 opcua-mcp-server.py：
 
-code
-Bash
 export CONSUL_HOST="127.0.0.1"
+
 export CONSUL_PORT="8500"
 
 4. 运行系统
