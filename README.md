@@ -70,8 +70,7 @@ export CONSUL_PORT="8500"
 
 系统采用 stdio 方式进行 MCP 通信，客户端会自动拉起服务端，只需运行 Client 即可：
 
-code
-Bash
+
 python MCPClient.py
 
 
